@@ -1,0 +1,24 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC by University of Oxford
+# Example usage: python train.py --data VOC.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── VOC  ← downloads here (2.8 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: data/datasets/meat_10/iid/client_0 # dataset root dir
+train: data/datasets/meat_15/iid/train_iid_14  # train images (relative to 'path') 119 images
+val: data/datasets/meat_10/iid/client_1/val  # val images (relative to 'path') 40 images
+test:  # test images (optional)
+nc: 6  # number of classes
+
+names:
+  0: chuckroll
+  1: cuberoll
+  2: rump
+  3: striploin
+  4: tenerloin
+  5: topside_cap_off
+

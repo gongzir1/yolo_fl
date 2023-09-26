@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Topside_cap_off (1)</folder>
+	<filename>20210408_100423_178.jpg</filename>
+	<path>/media/pk/Data/Project/dataset/Meat_image/Greenham/meat_category/part2/JPEGImages/20210408_100423_178.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1080</width>
+		<height>1920</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Topside_cap_off</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>79</xmin>
+			<ymin>834</ymin>
+			<xmax>398</xmax>
+			<ymax>1660</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Topside_cap_off</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>368</xmin>
+			<ymin>678</ymin>
+			<xmax>715</xmax>
+			<ymax>1443</ymax>
+		</bndbox>
+	</object>
+</annotation>

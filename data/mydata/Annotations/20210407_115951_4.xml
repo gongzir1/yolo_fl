@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Rump origin</folder>
+	<filename>20210407_115951_4.jpg</filename>
+	<path>/media/pk/Data/Project/dataset/Meat_image/Greenham/meat_category/part2/JPEGImages/20210407_115951_4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1080</width>
+		<height>1920</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Rump</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>171</xmin>
+			<ymin>662</ymin>
+			<xmax>826</xmax>
+			<ymax>1174</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rump</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>175</xmin>
+			<ymin>1133</ymin>
+			<xmax>827</xmax>
+			<ymax>1601</ymax>
+		</bndbox>
+	</object>
+</annotation>

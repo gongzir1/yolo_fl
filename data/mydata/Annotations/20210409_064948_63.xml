@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Chuckroll origin</folder>
+	<filename>20210409_064948_63.jpg</filename>
+	<path>/media/pk/Data/Project/dataset/Meat_image/Greenham/meat_category/part2/JPEGImages/20210409_064948_63.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1080</width>
+		<height>1920</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Chuckroll</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>432</xmin>
+			<ymin>697</ymin>
+			<xmax>851</xmax>
+			<ymax>1593</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Chuckroll</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>148</xmin>
+			<ymin>715</ymin>
+			<xmax>587</xmax>
+			<ymax>1635</ymax>
+		</bndbox>
+	</object>
+</annotation>

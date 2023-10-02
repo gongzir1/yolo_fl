@@ -114,8 +114,8 @@ $ python yolo_train_solo.py --data data/camacuc2.yaml --cfg yolov5s.yaml --weigh
                                                                                                    16
 ```
 ## Runing code:
-Start server first. The following are three examples with different settings.
-Server
+Start the server first. The following are three examples with different settings.
+
 ```
 $ python3 runner_server.py --server_address [::]:8080 --rounds 10 --load_params --min_sample_size 10 --min_num_clients 10 --device cuda:5
 $ python3 -m torch.distributed.run --master_port 1234 --nproc_per_node 8 runner_server.py --server_address [::]:8080 --rounds 2 --load_params --min_sample_size 5 --min_num_clients 5 --device 0,1,2,3,4,5,6,7

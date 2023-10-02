@@ -118,16 +118,20 @@ Start the server first. The following are three examples with different settings
 
 ```
 $ python3 runner_server.py --server_address [::]:8080 --rounds 10 --load_params --min_sample_size 10 --min_num_clients 10 --device cuda:5
+```
+```
 $ python3 -m torch.distributed.run --master_port 1234 --nproc_per_node 8 runner_server.py --server_address [::]:8080 --rounds 2 --load_params --min_sample_size 5 --min_num_clients 5 --device 0,1,2,3,4,5,6,7
+```
+```
 $ python3 runner_server.py --server_address [::]:8080 --rounds 30 --load_params --min_sample_size 2 --min_num_clients 2 --device cuda:7 --data data/voc1.yaml
 ```
 Clients:
-There are two ways to start the client first, is to start clients one by one:
+There are two ways to start the client, first is to start clients one by one:
 ```
 python3 runner_client.py --server_address [::]:8080 --cid 0 --epochs 10 --data data/meat.yaml
-sh file:
 ```
-You can also determine the number of clients first and start them all automatically:
+You can also determine the number of clients first and run 'sh file' to start them all automatically:
+
 ```
 sh ./run_client.sh 10
 ```

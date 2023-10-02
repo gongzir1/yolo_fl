@@ -2,10 +2,6 @@
 
 Repository of the conceptual work around Federated Learning to train the object detection model YOLOv5. 
 
-Here you can find the developed code, tests, concept experiments and demos.
-
-The current repository implements the logic regarding the tasks that the server and clients do.
-
 ## Clone repository
 
 ```
@@ -14,13 +10,6 @@ cd fedlearn
 pip3 install -r requirements.txt
 ```
 
-
-### venv
-
-In order to activate `venv` environment, execute the following command from repository root:
-```
-source venv/bin/activate
-```
 
 ## Repository folder structure:
 - `.vscode`: vscode configuration.
@@ -142,10 +131,7 @@ You can also determine the number of clients first and start them all automatica
 ```
 sh ./run_client.sh 10
 ```
-Centered:
-```
-python3 -m torch.distributed.run --nproc_per_node 2 train.py --batch 2 --data myvoc.yaml --weights yolov5s.pt --device 0,1 --epoch 300
-```
+
 
 How to divide the dataset:
 1. rename images and labels name based on their categorizes:

@@ -125,6 +125,7 @@ $ python yolo_train_solo.py --data data/camacuc2.yaml --cfg yolov5s.yaml --weigh
                                                                                                    16
 ```
 ## Runing code:
+Start server first. The following are three examples with different settings.
 Server
 ```
 $ python3 runner_server.py --server_address [::]:8080 --rounds 10 --load_params --min_sample_size 10 --min_num_clients 10 --device cuda:5
@@ -132,10 +133,12 @@ $ python3 -m torch.distributed.run --master_port 1234 --nproc_per_node 8 runner_
 $ python3 runner_server.py --server_address [::]:8080 --rounds 30 --load_params --min_sample_size 2 --min_num_clients 2 --device cuda:7 --data data/voc1.yaml
 ```
 Clients:
+There are two ways to start the client first, is to start clients one by one:
 ```
 python3 runner_client.py --server_address [::]:8080 --cid 0 --epochs 10 --data data/meat.yaml
 sh file:
 ```
+You can also determine the number of clients first and start them all automatically:
 ```
 sh ./run_client.sh 10
 ```
@@ -144,7 +147,7 @@ Centered:
 python3 -m torch.distributed.run --nproc_per_node 2 train.py --batch 2 --data myvoc.yaml --weights yolov5s.pt --device 0,1 --epoch 300
 ```
 
-how to divide dataset:
+How to divide the dataset:
 1. rename images and labels name based on their categorizes:
 e.g. rename_images(topside, topside, "Topside_cap_off", "jpg")
 2. move all the images and labels into one dir

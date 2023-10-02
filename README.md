@@ -139,7 +139,8 @@ e.g. move_files_to_directory(data/og_datasets,data/combine-data)
 2. split train and val dataset:
 e.g. split_dataset_val_train(path='E:\\DP\\yolov5FL1\\images\\', img_ext="jpg", train_split=0.8)
 
-pre-setting:
-export CUDA_VISIBLE_DEVICES=1
-export CUDA_VISIBLE_DEVICES=2,3,4,5,6,7
-### Future work
+
+### Reference
+# This code is based on the original work from the GitHub repository:
+# Original Repository: https://github.com/JQ-MC/object-detection-fedlearn.git
+

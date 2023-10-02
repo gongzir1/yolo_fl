@@ -141,6 +141,5 @@ e.g. split_dataset_val_train(path='E:\\DP\\yolov5FL1\\images\\', img_ext="jpg", 
 
 
 ### Reference
-# This code is based on the original work from the GitHub repository:
-# Original Repository: https://github.com/JQ-MC/object-detection-fedlearn.git
+This code is based on the original work from the GitHub repository: https://github.com/JQ-MC/object-detection-fedlearn.git
 
